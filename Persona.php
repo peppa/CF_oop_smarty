@@ -36,7 +36,7 @@ class Persona{
 		
 		
 		public function getCodiceFiscale(){
-			return $this->codfisc;
+			return $this->codfisc->getCodFisc();
 		}
 	
 		public function toString(){

@@ -25,13 +25,10 @@ $persona= new Persona($cognome,$nome,$anno,$mese,$giorno,$comune,$provincia,$ses
 //$persona->toString();
 
 
-$lol=$persona->getCodiceFiscale();
-
-var_dump ($lol);
 $smarty=new Smarty();
 $smarty->assign('name',$nome);
 $smarty->assign('surname',$cognome);
-$smarty->assign('CF', 'CDEV');
+$smarty->assign('CF', $persona->getCodiceFiscale());
 $smarty->display('Output.tpl');
 
 

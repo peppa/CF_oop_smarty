@@ -171,8 +171,8 @@ class CodiceFiscale {
 
 	}
 
-	public function toString(){
-		print $this->codicefiscale."\n\n";
+	public function getCodFisc(){
+		return $this->codicefiscale;
 	}
 
 }
