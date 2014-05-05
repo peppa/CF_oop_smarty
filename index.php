@@ -1,6 +1,6 @@
 <?php 
 
-require_once './libs/Smarty.class.php';
+require_once '.Smarty/libs/Smarty.class.php';
 //require_once './InOut.php';
 
 $smarty=new Smarty();
